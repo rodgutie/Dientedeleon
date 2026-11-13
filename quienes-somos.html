@@ -28,6 +28,8 @@ a{color:#2E472F}a:hover{color:#B9560F}
 .btn:focus-visible,.nav a:focus-visible{outline:3px solid #F2C14E;outline-offset:3px}
 .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:64px;align-items:center}
 .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.day{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:20px}
+.vals{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:20px}
 .five{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:20px}
 @media (max-width:900px){
  .two,.three,.wrap.two{grid-template-columns:1fr!important;gap:36px!important}
@@ -59,6 +61,8 @@ a{color:#2E472F}a:hover{color:#B9560F}
 
  .two,.three{grid-template-columns:1fr;gap:36px}
  .five{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .vals{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:22px 16px!important}
+ .day{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:24px 16px!important}
  .nav-links{display:none!important}
  .big{font-size:44px!important}
  .wrap{padding:0 20px}
@@ -105,8 +109,8 @@ a{color:#2E472F}a:hover{color:#B9560F}
     <nav class="nav" aria-label="Principal" style="display:flex;align-items:center;gap:22px">
       <div class="nav-links" style="display:flex;gap:28px;font-family:'Baar Metanoia','Trebuchet MS',sans-serif;font-size:17px"><a href="index.html#waldorf" style="color:#fff;text-decoration:none">Qué es Waldorf</a><a href="index.html#porque" style="color:#fff;text-decoration:none">Por qué Waldorf</a><a href="quienes-somos.html" aria-current="page" style="color:#F2C14E;text-decoration:none">Quiénes somos</a><a href="contacto.html" style="color:#fff;text-decoration:none">Contacto</a></div>
       <div class="soc" style="display:flex;gap:6px">
-        <a class="ico" href="https://www.instagram.com/dienteleonwaldorf/" aria-label="Instagram de Diente de León" style="color:#fff"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
-        <a class="ico" href="https://www.facebook.com/dientedeleoncentrodearteyaprendizajewaldorf" aria-label="Facebook de Diente de León" style="color:#fff"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"></path></svg></a>
+        <a class="ico" href="https://www.instagram.com/dienteleonwaldorf/" target="_blank" rel="noopener" aria-label="Instagram de Diente de León" style="color:#fff"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+        <a class="ico" href="https://www.facebook.com/dientedeleoncentrodearteyaprendizajewaldorf" target="_blank" rel="noopener" aria-label="Facebook de Diente de León" style="color:#fff"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"></path></svg></a>
       </div>
       <a class="btn wa" href="https://wa.me/50686663581" style="background:#FFFDF8;color:#2E472F;font-size:16px;min-height:44px;padding:0 18px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.4l1.4-4.2A8.5 8.5 0 1 1 20.5 11.6z"></path></svg><span class="wa-txt">WhatsApp</span></a>
       <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="mmenu">
@@ -118,8 +122,8 @@ a{color:#2E472F}a:hover{color:#B9560F}
       <ul style="list-style:none;margin:0;padding:0"><li><a href="index.html#waldorf" class="mlink">Qué es Waldorf</a></li><li><a href="index.html#porque" class="mlink">Por qué Waldorf</a></li><li><a href="quienes-somos.html" class="mlink">Quiénes somos</a></li><li><a href="contacto.html" class="mlink">Contacto</a></li></ul>
       <a class="btn" href="https://wa.me/50686663581" style="background:#FFFDF8;color:#2E472F;margin-top:28px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.4l1.4-4.2A8.5 8.5 0 1 1 20.5 11.6z"></path></svg> Escribir por WhatsApp</a>
       <div style="display:flex;gap:12px;margin-top:22px">
-        <a class="ico" href="https://www.instagram.com/dienteleonwaldorf/" aria-label="Instagram de Diente de León" style="color:#fff;border:1.5px solid rgba(255,255,255,.6)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
-        <a class="ico" href="https://www.facebook.com/dientedeleoncentrodearteyaprendizajewaldorf" aria-label="Facebook de Diente de León" style="color:#fff;border:1.5px solid rgba(255,255,255,.6)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"></path></svg></a>
+        <a class="ico" href="https://www.instagram.com/dienteleonwaldorf/" target="_blank" rel="noopener" aria-label="Instagram de Diente de León" style="color:#fff;border:1.5px solid rgba(255,255,255,.6)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a>
+        <a class="ico" href="https://www.facebook.com/dientedeleoncentrodearteyaprendizajewaldorf" target="_blank" rel="noopener" aria-label="Facebook de Diente de León" style="color:#fff;border:1.5px solid rgba(255,255,255,.6)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"></path></svg></a>
       </div>
     </div>
   </div>
@@ -164,13 +168,7 @@ a{color:#2E472F}a:hover{color:#B9560F}
 <section style="padding:90px 0 100px;background:#2E472F;color:#FFF7E6">
   <div class="wrap">
     <h2 class="dl" style="margin:0 0 44px;font-size:44px;font-weight:400;color:#FFFDF8">Nuestros valores</h2>
-    <ul class="five" style="list-style:none;margin:0;padding:0">
-      <li style="border-top:2px solid #F2C14E;padding-top:18px"><h3 class="dl" style="margin:0 0 8px;font-size:23px;font-weight:400;color:#FFFDF8">Lo bueno, lo bello y lo verdadero</h3><p style="margin:0;font-size:17px;color:#E8E1CC">La brújula de todo lo que hacemos.</p></li>
-      <li style="border-top:2px solid #F2C14E;padding-top:18px"><h3 class="dl" style="margin:0 0 8px;font-size:23px;font-weight:400;color:#FFFDF8">Respeto al ritmo</h3><p style="margin:0;font-size:17px;color:#E8E1CC">Cada niño aprende en su tiempo.</p></li>
-      <li style="border-top:2px solid #F2C14E;padding-top:18px"><h3 class="dl" style="margin:0 0 8px;font-size:23px;font-weight:400;color:#FFFDF8">Convivencia sana</h3><p style="margin:0;font-size:17px;color:#E8E1CC">Hábitos que nos ayudan a vivir juntos.</p></li>
-      <li style="border-top:2px solid #F2C14E;padding-top:18px"><h3 class="dl" style="margin:0 0 8px;font-size:23px;font-weight:400;color:#FFFDF8">Comunidad</h3><p style="margin:0;font-size:17px;color:#E8E1CC">Escuela y hogar caminan en la misma dirección.</p></li>
-      <li style="border-top:2px solid #F2C14E;padding-top:18px"><h3 class="dl" style="margin:0 0 8px;font-size:23px;font-weight:400;color:#FFFDF8">Amor por aprender</h3><p style="margin:0;font-size:17px;color:#E8E1CC">Curiosidad que dura toda la vida.</p></li>
-    </ul>
+    <ul class="vals" style="list-style:none;margin:0;padding:0"><li style="border-top:2px solid #F2C14E;padding-top:18px"><p class="dl" style="margin:0;font-size:24px;color:#FFFDF8">Igualdad</p></li><li style="border-top:2px solid #F2C14E;padding-top:18px"><p class="dl" style="margin:0;font-size:24px;color:#FFFDF8">Fraternidad</p></li><li style="border-top:2px solid #F2C14E;padding-top:18px"><p class="dl" style="margin:0;font-size:24px;color:#FFFDF8">Libertad</p></li><li style="border-top:2px solid #F2C14E;padding-top:18px"><p class="dl" style="margin:0;font-size:24px;color:#FFFDF8">Amor</p></li><li style="border-top:2px solid #F2C14E;padding-top:18px"><p class="dl" style="margin:0;font-size:24px;color:#FFFDF8">Compasión</p></li><li style="border-top:2px solid #F2C14E;padding-top:18px"><p class="dl" style="margin:0;font-size:24px;color:#FFFDF8">Veneración</p></li><li style="border-top:2px solid #F2C14E;padding-top:18px"><p class="dl" style="margin:0;font-size:24px;color:#FFFDF8">Laboriosidad</p></li></ul>
   </div>
 </section>
 
@@ -197,7 +195,6 @@ a{color:#2E472F}a:hover{color:#B9560F}
     <img src="logo_color.png" alt="Logo de Diente de León: un diente de león cuyas semillas vuelan como letras, números, música y pinceles" style="width:100%;max-width:440px;justify-self:center">
     <div>
       <h2 class="dl" style="margin:0 0 18px;font-size:44px;line-height:1.1;font-weight:400">Por qué un diente de león</h2>
-      <p style="margin:0 0 18px">Fíjate en las semillas que se lleva el viento: una letra, un número, una nota musical, el símbolo π y un pincel. Son el lenguaje, la matemática, la música y el arte que cada niño se lleva consigo.</p>
       <p style="margin:0">Como el diente de león, la escuela siembra con cuidado y deja que cada semilla encuentre su lugar en el mundo.</p>
     </div>
   </div>
@@ -207,11 +204,52 @@ a{color:#2E472F}a:hover{color:#B9560F}
 <section style="position:relative;padding:90px 0 110px">
   <div class="veil" aria-hidden="true" style="left:-6%;top:40px;width:112%;height:84%;background:#F6DCC8;border-radius:6% 5% 7% 4%"></div>
   <div class="wrap two" style="position:relative">
-    <div class="team-photo" style="height:640px;overflow:hidden;border-radius:46% 54% 40% 60% / 8% 7% 10% 8%"><img loading="lazy" class="photo" src="foto-maestras.jpg" alt="Las tres maestras de Diente de León sonriendo en el corredor de la escuela, con el jardín de fondo" style="object-position:50% 22%"></div>
+    <div class="team-photo" style="height:640px;overflow:hidden;border-radius:46% 54% 40% 60% / 8% 7% 10% 8%"><img loading="lazy" class="photo" src="foto-maestras.jpg" alt="Las tres maestras fundadoras de Diente de León sonriendo en el corredor de la escuela, con el jardín de fondo" style="object-position:50% 22%"></div>
     <div>
-      <h2 class="dl" style="margin:0 0 18px;font-size:44px;line-height:1.1;font-weight:400">Nuestras maestras</h2>
+      <h2 class="dl" style="margin:0 0 18px;font-size:44px;line-height:1.1;font-weight:400">Nuestras maestras fundadoras</h2>
       <p style="margin:0">Un equipo con experiencia y formación en pedagogía Waldorf, que acompaña a cada grupo con atención y cariño.</p>
     </div>
+  </div>
+</section>
+
+<!-- ============ UN DÍA ============ -->
+<section style="padding:100px 0 110px;background:#2E472F;color:#FFF7E6">
+  <div class="wrap">
+    <h2 class="dl" style="margin:0 0 12px;font-size:48px;line-height:1.1;font-weight:400;color:#FFFDF8">Un día en Diente de León</h2>
+    <p style="margin:0 0 52px;max-width:600px;color:#E8E1CC">El día tiene un ritmo que se repite, como una respiración: momentos de concentración y momentos de movimiento.</p>
+    <ol class="day" style="list-style:none;margin:0;padding:0">
+      <li>
+          <div style="height:210px;overflow:hidden;border-radius:999px 999px 18px 18px"><img loading="lazy" class="photo" src="foto-1362.jpg" alt="Ronda con los brazos arriba bajo un árbol"></div>
+          <h3 class="dl" style="margin:18px 0 6px;font-size:22px;font-weight:400;color:#FFFDF8">Ronda de la mañana</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#E8E1CC">Canciones, versos y movimiento para empezar juntos.</p>
+        </li>
+      <li>
+          <div style="height:210px;overflow:hidden;border-radius:999px 999px 18px 18px"><img loading="lazy" class="photo" src="foto-1324.jpg" alt="Niña trabajando en su cuaderno con un círculo de hilos"></div>
+          <h3 class="dl" style="margin:18px 0 6px;font-size:22px;font-weight:400;color:#FFFDF8">Clase principal</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#E8E1CC">El tema del bloque, trabajado a fondo.</p>
+        </li>
+      <li>
+          <div style="height:210px;overflow:hidden;border-radius:999px 999px 18px 18px"><img loading="lazy" class="photo" src="foto-1323.jpg" alt="Niña dibujando con crayones de bloque"></div>
+          <h3 class="dl" style="margin:18px 0 6px;font-size:22px;font-weight:400;color:#FFFDF8">Arte y manualidades</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#E8E1CC">Pintura, dibujo, tejido y manualidades.</p>
+        </li>
+      <li>
+          <div style="height:210px;overflow:hidden;border-radius:999px 999px 18px 18px"><img loading="lazy" class="photo" src="foto-1373.jpg" alt="Niño con los brazos al cielo en el zacate"></div>
+          <h3 class="dl" style="margin:18px 0 6px;font-size:22px;font-weight:400;color:#FFFDF8">Juego libre</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#E8E1CC">Correr, trepar e inventar al aire libre.</p>
+        </li>
+      <li>
+          <div style="height:210px;overflow:hidden;border-radius:999px 999px 18px 18px"><img loading="lazy" class="photo" src="foto-1404.jpg" alt="Niños sembrando en la huerta"></div>
+          <h3 class="dl" style="margin:18px 0 6px;font-size:22px;font-weight:400;color:#FFFDF8">Huerta</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#E8E1CC">Sembrar, cuidar y cosechar.</p>
+        </li>
+      <li>
+          <div style="height:210px;overflow:hidden;border-radius:999px 999px 18px 18px"><img loading="lazy" class="photo" src="foto-1395.jpg" alt="Niñas caminando juntas, abrazadas, al final de la jornada" style="object-position:22% 40%"></div>
+          <h3 class="dl" style="margin:18px 0 6px;font-size:22px;font-weight:400;color:#FFFDF8">Cierre</h3>
+          <p style="margin:0;font-size:16px;line-height:1.5;color:#E8E1CC">Revisión del día y despedida.</p>
+        </li>
+      
+    </ol>
   </div>
 </section>
 
@@ -220,7 +258,7 @@ a{color:#2E472F}a:hover{color:#B9560F}
   <div class="wrap two">
     <div>
       <h2 class="dl" style="margin:0 0 18px;font-size:44px;line-height:1.1;font-weight:400">Celebramos las estaciones</h2>
-      <p style="margin:0 0 28px">Las fiestas del año reúnen a niños, familias y maestras alrededor de la luz, la cosecha y la naturaleza. [Nombres de las fiestas que celebra la escuela].</p>
+      <p style="margin:0 0 28px">Las fiestas del año reúnen a niños, familias y maestras alrededor de la luz, la cosecha y la naturaleza.</p>
       <a class="btn" href="https://wa.me/50686663581" style="background:#B9560F;color:#fff">Agenda una visita</a>
     </div>
     <div style="height:420px;overflow:hidden;border-radius:60px 14px 60px 14px"><img loading="lazy" class="photo" src="foto-6430.jpg" alt="Faroles de papel de colores hechos en frascos de vidrio"></div>
@@ -231,7 +269,7 @@ a{color:#2E472F}a:hover{color:#B9560F}
   <div class="wrap" style="display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;align-items:center">
     <img src="logo_white.png" alt="Diente de León, Centro de Arte y Aprendizaje Waldorf" style="width:140px">
     <p style="margin:0">WhatsApp <a href="https://wa.me/50686663581" style="color:#FFF7E6">8666-3581</a> · info@dientedeleon.ed.cr</p>
-    <div class="foot-soc"><a class="ico" href="https://www.instagram.com/dienteleonwaldorf/" aria-label="Instagram de Diente de León"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a><a class="ico" href="https://www.facebook.com/dientedeleoncentrodearteyaprendizajewaldorf" aria-label="Facebook de Diente de León"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"></path></svg></a></div>
+    <div class="foot-soc"><a class="ico" href="https://www.instagram.com/dienteleonwaldorf/" target="_blank" rel="noopener" aria-label="Instagram de Diente de León"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"></circle></svg></a><a class="ico" href="https://www.facebook.com/dientedeleoncentrodearteyaprendizajewaldorf" target="_blank" rel="noopener" aria-label="Facebook de Diente de León"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"></path></svg></a></div>
   </div>
 </footer>
 
